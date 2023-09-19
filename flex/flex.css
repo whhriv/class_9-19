@@ -26,3 +26,14 @@
     /* align-self move one element to different aligntment */
     align-self: flex-end;
 }
+.container-2 {
+    margin-top: 5vh;
+    border: 5px solid gold;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* align-content: space-around; */
+    column-gap: 20px;
+
+}
