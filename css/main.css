@@ -1,6 +1,8 @@
 /* Universal Selector */
-
-
+/* 
+* {
+    border: 2px solid red;
+} */
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -22,6 +24,14 @@ Box Model is made up of 4 parts: Content, Padding, Border, Margin
     Margin - Clears an area outside the border. The margin is transparent
 */
 
+.box-model {
+    border: 4px solid green;
+    padding: 25px;
+    margin: 20px;
+}
+/* Total size:
+    height:100px (content) + 2*25px (padding) + 2*4px (border) + 2*20px (margin) = 198 px
+    width: 300px (content) + 2*25px (padding) + 2*4px (border) + 2*20px(margin) = 298px */
 
 
 /* Simple Selector */
