@@ -1,0 +1,28 @@
+.container-1 {
+    border: 5px solid navy;
+    height: 500px;
+    display: flex;
+    /*flex properties for parent or container element*/
+    /* flex-direction: row; */
+    align-items: center; /*cross axis(default vertical) definition --stretch--*/
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap; /*flex flow is flex direction+wrap (default horizontal LTR)*/
+    justify-content: space-around; /*evenly, between, around*/
+}
+/*flex properties for CHILD or Flex Item elements */
+/* set all flex items to have a flex-grow = 1 */
+.container-1 > img {
+    flex-grow: 1;
+}
+#child-1 {
+    border: 2px solid maroon;
+    order: 3;
+    /* flex-grow:2; */
+}
+#child-2 {
+    border: 2px solid forestgreen;
+    order: 1;
+    flex-shrink: 0; /*note working*/
+    /* align-self move one element to different aligntment */
+    align-self: flex-end;
+}
