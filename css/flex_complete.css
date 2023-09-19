@@ -1,0 +1,38 @@
+.container-1{
+    border: 5px solid green;
+    height: 500px;
+    display: flex;
+    /*   flex-direction: row;
+    flex-wrap: wrap-reverse; */
+    /* flex-flow is flex-direction + flex-wrap   */
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+    /*  align-content is only used for multi-line containers  */
+    /*   align-content: space-between; */
+}
+
+#child1{
+    border: 2px solid red;
+    order: 2;
+    flex-shrink: 2;
+}
+
+#child2{
+    border: 2px solid blue;
+    order: 100;
+    align-self: flex-end;
+}
+
+.container > img{
+    flex-shrink: 1
+}
+
+.container-2{
+    border: 5px solid dodgerblue;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-end;
+}
