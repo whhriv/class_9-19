@@ -37,41 +37,82 @@ Box Model is made up of 4 parts: Content, Padding, Border, Margin
 /* Simple Selector */
 /* element: grabs all of the elements base on the element name e.g h1,h2,p,div{} */
 
-
+h3 {
+    text-transform: uppercase;
+}
+section {
+    width: 90vw;
+    margin: auto;
+}
 /* class: grabs all of the elements with the class name. begins with a dot (.) e.g. .className */
 
+.selectors {
+    border: 2px solid red;
+    margin: 10px 0;
+    
+}
 
 /* id: grabs the element with the id. begins with an octothorpe (#) e.g. #idName */
 
-
+#simple {
+    text-align: center;
+}
 
 /* Combinator Selector - based on the relationship */
-/* Descendant Selector - Used to match all elements that are direct descendants of a specified element */
-
+/* Descendant Selector (space) - Used to match all elements that are direct descendants of a specified element */
+#combo h6 {
+    text-align: right;
+}
 
 /* Child Selector (>) - Used to match all elements that are direct children of a specified element. Descendant and child selectors are often used interchangably because they are very similar. The difference here though is specificity */
 
+#combo > h6 {
+    color:blue;
+}
 
-/* Adjacent Sibling Selector (+) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
+/* Adjacent Sibling Selector (+) - Used to select an element that is DIRECTLY after another specific element. HAS to be immediately following! can't flip flop! */
 
+aside + h4 {
+    background-color: green;
+}
 
-/* General Sibling Selector (~) - Used to select an element that is directly after another specific element. HAS to be immediately following! */
+/* General Sibling Selector (~) - Used to select an element that is after another specific element.  HAS TO BE AFTER */
 
+aside ~ h3 {
+    background-color: orange;
+}
 
 
 /* Pseudo-class Selector - Select elements based on a certain state */
 /* selector:pseudo-class{} */
 
 /* unvisited link */
+.selectors a:link {
+    color:red;
+}
 
 /* visited link */
-
+.selectors a:visited {
+    color: green;
+}
+/* hover has to come after, active has to come after hover */
 /* mouse over link */
+.selectors a:hover {
+    color: white;
+    background-color: black;
+    font-size: 24px;
+}
 
 /* selected link */
 
+.selectors a:active {
+    color: blue;
+    background-color: red;
+}
 
-
+.child-example p:nth-child(3) {
+    background-color: blueviolet;
+}
 
 /* Pseudo Elements - used to style specified parts of an element */
 /* selector::psuedo-element{} */
