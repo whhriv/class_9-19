@@ -133,6 +133,12 @@
         </div>
     </section>
     <h4>h4 without sibling</h4>
-
+<script>
+    let button = document.getElementById('test')
+    button.addEventListener('click', () => {
+        let middlePhoto = document.getElementById('middle')
+        middlePhoto.style.display = middlePhoto.style.display === 'none' ? 'inline' : 'none'
+    })
+</script>
 </body>
 </html>
