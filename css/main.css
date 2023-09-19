@@ -116,7 +116,18 @@ aside ~ h3 {
 
 /* Pseudo Elements - used to style specified parts of an element */
 /* selector::psuedo-element{} */
+#first-line::first-letter {
+    color: blue;
+    font-size: 4em;
+}
+#first-line::first-line {
+    color: red;
+    font-variant:small-caps;
+}
 
+#after-example::after {
+    content: url(https://picsum.photos/100)
+}
 
 
 
